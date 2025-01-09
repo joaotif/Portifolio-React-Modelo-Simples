@@ -1,0 +1,148 @@
+/* Base styles */
+.home {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 23.5rem;
+    padding: 2rem;
+}
+
+.home img {
+    height: 500px;
+    margin-left: 15%;
+}
+
+.home p {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.home span {
+    color: var(--secondary);
+}
+
+.btn {
+    width: 250px;
+    height: 50px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn_red {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn_red:hover {
+    background-color: var(--secondary);
+}
+
+/* Laptop/Smaller Desktop Screens */
+@media screen and (max-width: 1366px) {
+    .home {
+        gap: 10rem;
+        padding: 1rem;
+    }
+
+    .home img {
+        height: 400px;
+        margin-left: 10%;
+    }
+
+    .home p {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        width: 300px;
+    }
+}
+
+/* Tablets & Small Laptops */
+@media screen and (max-width: 1024px) {
+    .home {
+        gap: 5rem;
+    }
+
+    .home img {
+        height: 350px;
+        margin-left: 5%;
+    }
+
+    .home p {
+        font-size: 2rem;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    .home {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .home img {
+        height: 300px;
+        margin-left: 0;
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        margin-top: 1rem;
+    }
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 480px) {
+    .home {
+        padding: 1rem;
+        min-height: 80vh;
+    }
+
+    .home img {
+        height: 250px;
+    }
+
+    .home p {
+        font-size: 1.75rem;
+    }
+
+    .btn {
+        width: 180px;
+        height: 45px;
+        font-size: 1rem;
+    }
+}
+
+/* Small Mobile Phones */
+@media screen and (max-width: 320px) {
+    .home img {
+        height: 200px;
+    }
+
+    .home p {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        width: 160px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,164 @@
+.contatos {
+    width: 90%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icones {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.icone {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    transition: transform 0.3s ease;
+}
+
+.icone:hover {
+    transform: scale(0.9);
+}
+
+/* Laptop/Smaller Desktop */
+@media screen and (max-width: 1366px) {
+    .contatos {
+        width: 95%;
+        gap: 1.25rem;
+    }
+
+    .icones {
+        gap: 1rem;
+    }
+
+    .icone {
+        font-size: 2rem;
+    }
+}
+
+/* Tablets & Small Laptops */
+@media screen and (max-width: 1024px) {
+    .contatos {
+        height: 80vh;
+    }
+
+    .icones {
+        width: 95%;
+        gap: 2rem;
+    }
+
+    .icone {
+        font-size: 2.5rem;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    .contatos {
+        height: 75vh;
+        gap: 1rem;
+    }
+
+    .icones {
+        gap: 1.75rem;
+        padding-block: 0.75rem;
+    }
+
+    .icone {
+        font-size: 2.25rem;
+    }
+
+    .contatos h2 {
+        font-size: 1.75rem;
+    }
+
+    .contatos h3 {
+        font-size: 1.25rem;
+    }
+
+    .contatos p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 480px) {
+    .contatos {
+        width: 100%;
+        height: 70vh;
+        padding: 0.75rem;
+    }
+
+    .icones {
+        width: 100%;
+        gap: 1.5rem;
+        padding-block: 0.5rem;
+    }
+
+    .icone {
+        font-size: 2rem;
+    }
+
+    .contatos h2 {
+        font-size: 1.5rem;
+    }
+
+    .contatos h3 {
+        font-size: 1.15rem;
+    }
+
+    .contatos p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small Mobile Phones */
+@media screen and (max-width: 320px) {
+    .contatos {
+        gap: 0.75rem;
+    }
+
+    .icones {
+        gap: 1.25rem;
+    }
+
+    .icone {
+        font-size: 1.75rem;
+    }
+
+    .contatos h2 {
+        font-size: 1.25rem;
+    }
+
+    .contatos h3 {
+        font-size: 1rem;
+    }
+
+    .contatos p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Landscape Mode for Mobile */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+    .contatos {
+        height: auto;
+        min-height: 100vh;
+        padding: 2rem 1rem;
+    }
+
+    .icones {
+        margin: 1rem 0;
+    }
+}

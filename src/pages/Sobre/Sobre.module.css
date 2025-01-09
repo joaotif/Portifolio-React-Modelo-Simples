@@ -1,0 +1,185 @@
+.sobre {
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 1.5rem;
+    max-width: 1200px;
+}
+
+.avatar {
+    max-width: 300px;
+    height: auto;
+}
+
+.bio span {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.bio strong {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.textos {
+    max-width: 600px;
+}
+
+.textos h2, p {
+    margin-bottom: 1rem;
+}
+
+.techs {
+    width: 50%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icones {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.icones img {
+    height: 50px;
+}
+
+/* Laptop/Smaller Desktop */
+@media screen and (max-width: 1366px) {
+    .bio {
+        gap: 2rem;
+    }
+
+    .avatar {
+        max-width: 250px;
+    }
+
+    .techs {
+        width: 60%;
+    }
+}
+
+/* Tablets & Small Laptops */
+@media screen and (max-width: 1024px) {
+    .bio {
+        gap: 1.5rem;
+    }
+
+    .avatar {
+        max-width: 220px;
+    }
+
+    .techs {
+        width: 70%;
+    }
+
+    .icones img {
+        height: 45px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    .sobre {
+        padding: 1.5rem;
+    }
+
+    .bio {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .avatar {
+        max-width: 200px;
+    }
+
+    .techs {
+        width: 80%;
+    }
+
+    .icones {
+        gap: 1rem;
+    }
+
+    .textos h2 {
+        font-size: 1.75rem;
+    }
+
+    .textos p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 480px) {
+    .sobre {
+        padding: 1rem;
+        justify-content: flex-start;
+        margin-top: 2rem;
+    }
+
+    .avatar {
+        max-width: 180px;
+    }
+
+    .techs {
+        width: 90%;
+    }
+
+    .icones {
+        gap: 1rem;
+    }
+
+    .icones img {
+        height: 40px;
+    }
+
+    .textos h2 {
+        font-size: 1.5rem;
+    }
+
+    .textos p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small Mobile Phones */
+@media screen and (max-width: 320px) {
+    .avatar {
+        max-width: 150px;
+    }
+
+    .techs {
+        width: 100%;
+    }
+
+    .icones img {
+        height: 35px;
+    }
+
+    .textos h2 {
+        font-size: 1.25rem;
+    }
+
+    .textos p {
+        font-size: 0.85rem;
+    }
+}
